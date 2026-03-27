@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    --background: 1 0 0;
+    --foreground: 0.163 0.011 253;
+    --card: 1 0 0;
+    --card-foreground: 0.163 0.011 253;
+    --popover: 1 0 0;
+    --popover-foreground: 0.163 0.011 253;
+    --primary: 0.489 0.077 201;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.94 0.028 200;
+    --secondary-foreground: 0.489 0.077 201;
+    --muted: 0.97 0.01 200;
+    --muted-foreground: 0.413 0.013 253;
+    --accent: 0.96 0.022 200;
+    --accent-foreground: 0.489 0.077 201;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    --border: 0.92 0.015 200;
+    --input: 0.92 0.015 200;
+    --ring: 0.489 0.077 201;
+    --chart-1: 0.489 0.077 201;
+    --chart-2: 0.65 0.15 150;
+    --chart-3: 0.75 0.18 85;
+    --chart-4: 0.55 0.12 230;
+    --chart-5: 0.65 0.14 20;
+    --sidebar: 0.97 0.01 200;
+    --sidebar-foreground: 0.163 0.011 253;
+    --sidebar-primary: 0.489 0.077 201;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.94 0.028 200;
+    --sidebar-accent-foreground: 0.489 0.077 201;
+    --sidebar-border: 0.92 0.015 200;
+    --sidebar-ring: 0.489 0.077 201;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Figtree", system-ui, sans-serif;
+  }
+}
